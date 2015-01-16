@@ -2,6 +2,15 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
+button a{ color: #FCFCFC ;
+   text-decoration: none;}
+
+   button a:hover {
+
+    color: #C4C4C4;
+    text-decoration: none;
+   }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
