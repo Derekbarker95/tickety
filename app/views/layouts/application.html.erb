@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Supporter</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="container">
+
+<ul class="nav nav-pills">
+  <li><a class="navbar-brand" href="/">Supporter</a></li>
+  <li role="presentation"><a href="/supports/new">New Ticket</a></li>
+  <li role="presentation"><a href="/supports">List Tickets</a></li>
+</ul>
+
+
+
+<%= yield %>
+
+</div>
+
+</body>
+</html>

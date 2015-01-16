@@ -1,0 +1,41 @@
+
+
+<% if @ticket.errors.any? %>
+<ul>
+  <% @ticket.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+  <% end %>
+</ul>
+<% end %>
+
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-md-11">
+
+<%= form_for @ticket do |f| %> 
+<div class="form-group">
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+</div>
+<div class="form-group">
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+</div>
+<div class="form-group">
+  <%= f.radio_button(:department, "Sales") %>
+  <%= f.label(:department_sales, "Sales") %>
+  <%= f.radio_button(:department, "Marketing") %>
+  <%= f.label(:department_sales, "Marketing") %>
+  <%= f.radio_button(:department, "Technical") %>
+  <%= f.label(:department_technical, "Technical") %>
+</div>
+<div class="form-group">
+  <%= f.label :message %>
+  <%= f.text_area :message %>
+</div>
+<div class="form-group">
+  <%= f.submit "Save"%>
+</div>
+  <%end%>
+  </div>
+
