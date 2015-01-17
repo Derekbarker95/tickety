@@ -4,12 +4,17 @@
 
 
 button a{ color: #FCFCFC ;
-   text-decoration: none;}
+   text-decoration: none;
+   padding: 10px 30px;}
 
    button a:hover {
 
     color: #C4C4C4;
     text-decoration: none;
+   }
+
+   .btn {
+    padding: 0px;
    }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
