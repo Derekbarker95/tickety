@@ -1,12 +1,16 @@
 Rails.application.routes.draw do
 
 
+  devise_for :users, controllers: { sessions: "users/sessions" }
+
   get "supports/toggle/:id" => "supports#toggle", as: :toggle_support
   
   resources :supports
 
 
-  root 'welcome#index'
+  root 'supports#index'
+
+
 
   
 

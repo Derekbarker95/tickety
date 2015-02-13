@@ -3,7 +3,6 @@ class SupportsController < ApplicationController
 
   before_action :find_support, only: [:show, :edit, :update, :destroy, :toggle]
 
-
   def new
     @ticket = Support.new
 
